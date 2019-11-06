@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Practice</title>
+</head>
+<body>
+    <div style="text-align: center">
+        <h1>JS Practice</h1>
+    </div>
+    <br/>
+    <br/>
+    <div style="text-align: center">
+        <h2>1. CHANGE INPUT VALUE ACCORDING SELECT</h2>
+        <select id="select">
+            <option value="0"></option>
+            <option value="100">A</option>
+            <option value="200">B</option>
+            <option value="300">C</option>
+            <option value="400">D</option>
+        </select>
+        <input id="input" type="text" disabled>
+    </div>
+
+    <script src="static/js/jquery-2.2.4.js" type="text/javascript"></script>
+    <script>
+        $('#select').change(function () {
+            $('#input').val($('select').val());
+        });
+    </script>
+</body>
+</html>
